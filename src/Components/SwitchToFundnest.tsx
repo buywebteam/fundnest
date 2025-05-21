@@ -49,7 +49,7 @@ const features = [
 const SwitchToFundnestSection = () => {
   return (
     <section className="py-16">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-teal-700 mb-4">
           Switch to Fundnest
         </h2>
