@@ -11,7 +11,7 @@ const StatsSection = () => {
   return (
     <section className="py-30 bg-teal-50">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-12 text-center">
           {stats.map(({ value, suffix, label }, idx) => (
             <div key={idx}>
               <p className="text-4xl font-extrabold text-teal-700">
