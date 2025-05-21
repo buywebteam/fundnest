@@ -2,18 +2,18 @@ import { FaUserPlus, FaClipboardList, FaMoneyCheckAlt } from "react-icons/fa";
 
 const cards = [
   {
-    icon: <FaUserPlus size={30} className="text-teal-500" />,
+    icon: <FaUserPlus size={30} className="text-teal-600" />,
     title: "Become a member",
     description: "Become a member of Fundnest by creating a free account.",
   },
   {
-    icon: <FaClipboardList size={30} className="text-teal-500" />,
+    icon: <FaClipboardList size={30} className="text-teal-600" />,
     title: "Choose your Plan",
     description:
       "Select any of our unique financial earning plans that best works for you.",
   },
   {
-    icon: <FaMoneyCheckAlt size={30} className="text-teal-500" />,
+    icon: <FaMoneyCheckAlt size={30} className="text-teal-600" />,
     title: "Earn Passively",
     description:
       "Earn passively and get paid immediately you request for a withdrawal.",
@@ -29,7 +29,7 @@ const CardsSection = () => {
             key={title}
             className="p-6 border rounded-lg shadow-sm hover:shadow-lg transition-shadow text-center"
           >
-            <div className="flex items-center justify-center w-14 h-14 bg-teal-100 rounded-full ">
+            <div className="flex items-center justify-center w-14 h-14 bg-teal-50 rounded-full ">
               {icon}
             </div>
             <h3 className="text-xl font-semibold mb-2">{title}</h3>

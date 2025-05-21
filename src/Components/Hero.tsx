@@ -34,8 +34,8 @@ const Hero = () => {
           {subtitles[subtitleIndex]}
         </p>
       </div>
-      <button className="mt-6 px-8 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-700 transition duration-300 cursor-pointer">
-        Get Started
+      <button className="mt-6 px-8 py-3 bg-teal-500 text-white text-base rounded-lg hover:bg-teal-700 transition duration-300 cursor-pointer">
+        Create an Account
       </button>
     </section>
   );
