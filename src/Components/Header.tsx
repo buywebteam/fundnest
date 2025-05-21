@@ -1,35 +1,73 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-black text-white sticky top-0 z-10 p-4">
+    <nav className="bg-teal-500 text-white sticky top-0 z-50 p-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="/" className="text-xl font-bold">
-          AlienX
-        </a>
+        <NavLink to="/" className="text-xl font-bold">
+          Fundnest
+        </NavLink>
         <ul className="hidden md:flex space-x-6 mx-auto">
           <li>
-            <a href="/home">Home</a>
+            <NavLink
+              to="/home"
+              className={({ isActive }) =>
+                isActive
+                  ? "font-bold border-b-2 border-white pb-1"
+                  : "hover:border-b-2 hover:border-white pb-1"
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="/about">About</a>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive
+                  ? "font-bold border-b-2 border-white pb-1"
+                  : "hover:border-b-2 hover:border-white pb-1"
+              }
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                isActive
+                  ? "font-bold border-b-2 border-white pb-1"
+                  : "hover:border-b-2 hover:border-white pb-1"
+              }
+            >
+              Services
+            </NavLink>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "font-bold border-b-2 border-white pb-1"
+                  : "hover:border-b-2 hover:border-white pb-1"
+              }
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
-        <div className="hidden md:flex space-x-4">
-          <button className="bg-transparent border border-white px-4 py-2 rounded hover:bg-white hover:text-black">
+
+        <div className="hidden md:flex space-x-3">
+          <button className="bg-transparent border border-white px-6 py-2 rounded hover:bg-white hover:text-teal-500 cursor-pointer">
             Login
           </button>
-          <button className="bg-white text-black px-4 py-2 rounded hover:bg-gray-300">
+          <button className="bg-white text-teal-500 px-6 py-2 rounded cursor-pointer">
             Sign Up
           </button>
         </div>
@@ -39,33 +77,72 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      <div className={`${isOpen ? "block" : "hidden"} md:hidden mt-4`}>
+      <div
+        className={`${
+          isOpen
+            ? "absolute left-0 w-full z-40 bg-teal-500 px-4 h-[320px]"
+            : "hidden"
+        } md:hidden pt-6`}
+      >
         <ul className="flex flex-col space-y-4">
           <li>
-            <a href="/home" onClick={toggleMenu}>
+            <NavLink
+              to="/home"
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "font-bold border-b-2 border-white pb-1"
+                  : "hover:border-b-2 hover:border-white pb-1"
+              }
+            >
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="/about" onClick={toggleMenu}>
+            <NavLink
+              to="/about"
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "font-bold border-b-2 border-white pb-1"
+                  : "hover:border-b-2 hover:border-white pb-1"
+              }
+            >
               About
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="/services" onClick={toggleMenu}>
+            <NavLink
+              to="/services"
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "font-bold border-b-2 border-white pb-1"
+                  : "hover:border-b-2 hover:border-white pb-1"
+              }
+            >
               Services
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="/contact" onClick={toggleMenu}>
+            <NavLink
+              to="/contact"
+              onClick={toggleMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "font-bold border-b-2 border-white pb-1"
+                  : "hover:border-b-2 hover:border-white pb-1"
+              }
+            >
               Contact
-            </a>
+            </NavLink>
           </li>
+
           <div className="flex flex-col space-y-2 mt-4">
-            <button className="bg-transparent border border-white px-4 py-2 rounded hover:bg-white hover:text-black">
+            <button className="bg-transparent border border-white px-4 py-2 rounded hover:bg-white hover:text-teal-500 cursor-pointer">
               Login
             </button>
-            <button className="bg-white text-black px-4 py-2 rounded hover:bg-gray-300">
+            <button className="bg-white text-teal-500 px-4 py-2 rounded cursor-pointer">
               Sign Up
             </button>
           </div>
