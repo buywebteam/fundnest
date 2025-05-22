@@ -1,12 +1,12 @@
 const PrivacyPolicy = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 text-gray-800">
-      <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
+      <h1 className="text-3xl font-bold mb-6 text-teal-700">Privacy Policy</h1>
       <p className="text-sm text-gray-500 mb-8">Last Updated: June 06, 2018</p>
 
       <section className="mb-10">
         <p className="mb-4">
-          FundNest (“we”, “us”, “our”) is committed to protecting and respecting
+          Fundnest (“we”, “us”, “our”) is committed to protecting and respecting
           your privacy and meeting its data protection obligations under the
           General Data Protection Regulation (“GDPR”) and the Data Protection
           Act 2018.

@@ -1,7 +1,9 @@
 const TermsAndConditions = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 text-sm md:text-base text-gray-800">
-      <h1 className="text-2xl font-bold mb-4">Terms and Conditions</h1>
+      <h1 className="text-3xl font-bold mb-4 text-teal-700">
+        Terms and Conditions
+      </h1>
 
       <section className="mb-6">
         <h2 className="text-xl font-semibold mb-2">1. Objectives</h2>
