@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const subtitles = [
   "Comprehensive financial advice and investment services that are tailored to meet your individual needs.",
@@ -34,9 +35,11 @@ const Hero = () => {
           {subtitles[subtitleIndex]}
         </p>
       </div>
-      <button className="mt-6 px-8 py-3 bg-teal-500 text-white text-base rounded-lg hover:bg-teal-700 transition duration-300 cursor-pointer">
-        Create an Account
-      </button>
+      <Link to="/signup">
+        <button className="mt-6 px-8 py-3 bg-teal-500 text-white text-base rounded-lg hover:bg-teal-700 transition duration-300 cursor-pointer">
+          Create an Account
+        </button>
+      </Link>
     </section>
   );
 };

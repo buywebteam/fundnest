@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HomeCard from "./HomeCard";
 
 function Homecard2() {
@@ -14,9 +15,11 @@ function Homecard2() {
           Connect with over 450,000 investors in the world’s leading investment
           company
         </p>
-        <button className="px-8 py-3 bg-teal-500 text-white text-base rounded-lg cursor-pointer">
-          Create an Account
-        </button>
+        <Link to="/signup">
+          <button className="px-8 py-3 bg-teal-500 text-white text-base rounded-lg cursor-pointer">
+            Create an Account
+          </button>
+        </Link>
       </div>
     </section>
   );
