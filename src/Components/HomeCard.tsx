@@ -22,7 +22,7 @@ const cards = [
 
 const CardsSection = () => {
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
         {cards.map(({ icon, title, description }) => (
           <div

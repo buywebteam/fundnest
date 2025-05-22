@@ -3,13 +3,13 @@ const JoinUs = () => {
     <section className="bg-white py-16 px-4 md:px-4 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
         {/* Text Content */}
-        <div className="md:w-1/2 space-y-6">
+        <div className="md:w-1/2 space-y-8">
           <h2 className="text-4xl font-extrabold text-teal-700">JOIN US</h2>
           <h3 className="text-xl font-semibold text-gray-800">
             Partner with an experienced alternative investment Team
           </h3>
 
-          <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="space-y-6 text-gray-700 leading-relaxed">
             <p>
               <strong>Join us, at no cost to you</strong>
               <br />

@@ -1,9 +1,11 @@
 import FeaturedOn from "../components/FeaturedOn";
 import Hero from "../components/Hero";
 import HomeCard from "../components/HomeCard";
+import Homecard2 from "../components/Homecard2";
 import JoinUs from "../components/JoinUs";
 import StatSection from "../components/StatSection";
 import SwitchToFundnest from "../components/SwitchToFundnest";
+import TestimonialSection from "../components/Testimonials";
 import WhyChooseUs from "../components/WhyChooseUs";
 
 function Home() {
@@ -16,6 +18,8 @@ function Home() {
       <WhyChooseUs />
       <StatSection />
       <SwitchToFundnest />
+      <TestimonialSection />
+      <Homecard2 />
     </div>
   );
 }

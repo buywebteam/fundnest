@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-teal-500 text-white sticky top-0 z-50 p-4">
+    <nav className="bg-teal-900 text-white sticky top-0 z-50 p-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <NavLink to="/" className="text-xl font-bold">
           Fundnest
@@ -51,6 +51,18 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
+              to="/plans"
+              className={({ isActive }) =>
+                isActive
+                  ? "font-bold border-b-2 border-white pb-1"
+                  : "hover:border-b-2 hover:border-white pb-1"
+              }
+            >
+              Investment Plan
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/contact"
               className={({ isActive }) =>
                 isActive
@@ -64,12 +76,16 @@ const Navbar = () => {
         </ul>
 
         <div className="hidden md:flex space-x-3">
-          <button className="bg-transparent border border-white px-6 py-2 rounded hover:bg-white hover:text-teal-500 cursor-pointer">
-            Login
-          </button>
-          <button className="bg-white text-teal-500 px-6 py-2 rounded cursor-pointer">
-            Sign Up
-          </button>
+          <Link to="/login">
+            <button className="bg-transparent border border-white px-6 py-2 rounded hover:bg-white hover:text-teal-500 cursor-pointer">
+              Login
+            </button>
+          </Link>
+          <Link to="/signup">
+            <button className="bg-white text-teal-500 px-6 py-2 rounded cursor-pointer">
+              Sign Up
+            </button>
+          </Link>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
@@ -139,12 +155,16 @@ const Navbar = () => {
           </li>
 
           <div className="flex flex-col space-y-2 mt-4">
-            <button className="bg-transparent border border-white px-4 py-2 rounded hover:bg-white hover:text-teal-500 cursor-pointer">
-              Login
-            </button>
-            <button className="bg-white text-teal-500 px-4 py-2 rounded cursor-pointer">
-              Sign Up
-            </button>
+            <Link to="/login">
+              <button className="bg-transparent border border-white px-4 py-2 rounded hover:bg-white hover:text-teal-500 cursor-pointer">
+                Login
+              </button>
+            </Link>
+            <Link to="/signup">
+              <button className="bg-white text-teal-500 px-4 py-2 rounded cursor-pointer">
+                Sign Up
+              </button>
+            </Link>
           </div>
         </ul>
       </div>
