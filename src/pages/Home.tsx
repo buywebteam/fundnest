@@ -1,7 +1,7 @@
 import FeaturedOn from "../components/FeaturedOn";
 import Hero from "../components/Hero";
 import HomeCard from "../components/HomeCard";
-import Homecard2 from "../components/Homecard2";
+import HomeCard2 from "../components/HomeCard2";
 import JoinUs from "../components/JoinUs";
 import StatSection from "../components/StatSection";
 import SwitchToFundnest from "../components/SwitchToFundnest";
@@ -19,7 +19,7 @@ function Home() {
       <StatSection />
       <SwitchToFundnest />
       <TestimonialSection />
-      <Homecard2 />
+      <HomeCard2 />
     </div>
   );
 }

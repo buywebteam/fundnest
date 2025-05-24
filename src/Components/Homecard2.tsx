@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import HomeCard from "./HomeCard";
 
-function Homecard2() {
+function HomeCard2() {
   return (
     <section className="py-16">
       <div className="">
@@ -25,4 +25,4 @@ function Homecard2() {
   );
 }
 
-export default Homecard2;
+export default HomeCard2;
