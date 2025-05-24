@@ -12,14 +12,14 @@ const Navbar = () => {
         <NavLink to="/" className="text-xl font-bold">
           Fundnest
         </NavLink>
-        <ul className="hidden md:flex space-x-6 mx-auto">
+        <ul className="hidden md:flex space-x-6 mx-auto lg:text-base  md:text-xs">
           <li>
             <NavLink
               to="/home"
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold border-b-2 border-white pb-1"
-                  : "hover:border-b-2 hover:border-white pb-1"
+                  ? "font-bold border-b-2 border-teal-500 pb-1"
+                  : "hover:border-b-2 hover:border-teal-500 pb-1 "
               }
             >
               Home
@@ -30,8 +30,8 @@ const Navbar = () => {
               to="/about"
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold border-b-2 border-white pb-1"
-                  : "hover:border-b-2 hover:border-white pb-1"
+                  ? "font-bold border-b-2 border-teal-500 pb-1"
+                  : "hover:border-b-2  hover:border-teal-500 pb-1"
               }
             >
               About
@@ -42,8 +42,8 @@ const Navbar = () => {
               to="/services"
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold border-b-2 border-white pb-1"
-                  : "hover:border-b-2 hover:border-white pb-1"
+                  ? "font-bold border-b-2  border-teal-500 pb-1"
+                  : "hover:border-b-2  hover:border-teal-500 pb-1"
               }
             >
               Services
@@ -54,8 +54,8 @@ const Navbar = () => {
               to="/plans"
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold border-b-2 border-white pb-1"
-                  : "hover:border-b-2 hover:border-white pb-1"
+                  ? "font-bold border-b-2  border-teal-500 pb-1"
+                  : "hover:border-b-2  hover:border-teal-500 pb-1"
               }
             >
               Investment Plan
@@ -66,8 +66,8 @@ const Navbar = () => {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold border-b-2 border-white pb-1"
-                  : "hover:border-b-2 hover:border-white pb-1"
+                  ? "font-bold border-b-2 border-teal-500 pb-1"
+                  : "hover:border-b-2  hover:border-teal-500 pb-1"
               }
             >
               Contact
@@ -75,7 +75,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="hidden md:flex space-x-3">
+        <div className="hidden md:flex space-x-3 lg:text-base  md:text-xs">
           <Link to="/login">
             <button className="bg-transparent border border-white px-6 py-2 rounded hover:bg-white hover:text-teal-500 cursor-pointer">
               Login
@@ -96,7 +96,7 @@ const Navbar = () => {
       <div
         className={`${
           isOpen
-            ? "absolute left-0 w-full z-40 bg-teal-500 px-4 h-[320px]"
+            ? "absolute left-0 w-full z-40 bg-teal-900 px-4 h-[320px]"
             : "hidden"
         } md:hidden pt-6`}
       >
@@ -107,8 +107,8 @@ const Navbar = () => {
               onClick={toggleMenu}
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold border-b-2 border-white pb-1"
-                  : "hover:border-b-2 hover:border-white pb-1"
+                  ? "font-bold border-b-2 border-teal-500 pb-1"
+                  : "hover:border-b-2  hover:border-teal-500 pb-1"
               }
             >
               Home
@@ -120,8 +120,8 @@ const Navbar = () => {
               onClick={toggleMenu}
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold border-b-2 border-white pb-1"
-                  : "hover:border-b-2 hover:border-white pb-1"
+                  ? "font-bold border-b-2 border-teal-500 pb-1"
+                  : "hover:border-b-2  hover:border-teal-500 pb-1"
               }
             >
               About
@@ -133,8 +133,8 @@ const Navbar = () => {
               onClick={toggleMenu}
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold border-b-2 border-white pb-1"
-                  : "hover:border-b-2 hover:border-white pb-1"
+                  ? "font-bold border-b-2 border-teal-500 pb-1"
+                  : "hover:border-b-2  hover:border-teal-500 pb-1"
               }
             >
               Services
@@ -146,22 +146,22 @@ const Navbar = () => {
               onClick={toggleMenu}
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold border-b-2 border-white pb-1"
-                  : "hover:border-b-2 hover:border-white pb-1"
+                  ? "font-bold border-b-2 border-teal-500 pb-1"
+                  : "hover:border-b-2 hover:border-teal-500 pb-1"
               }
             >
               Contact
             </NavLink>
           </li>
 
-          <div className="flex flex-col space-y-2 mt-4">
+          <div className="flex flex-col space-y-4 mt-4 w-full">
             <Link to="/login">
-              <button className="bg-transparent border border-white px-4 py-2 rounded hover:bg-white hover:text-teal-500 cursor-pointer">
+              <button className="bg-transparent w-full border border-white px-4 py-2 rounded hover:bg-white hover:text-teal-500 cursor-pointer">
                 Login
               </button>
             </Link>
             <Link to="/signup">
-              <button className="bg-white text-teal-500 px-4 py-2 rounded cursor-pointer">
+              <button className="bg-white w-full text-teal-500 px-4 py-2 rounded cursor-pointer">
                 Sign Up
               </button>
             </Link>
