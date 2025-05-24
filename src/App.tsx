@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import ForgotPassword from "./pages/ForgotPassword";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/plans" element={<InvestmentPlans />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
