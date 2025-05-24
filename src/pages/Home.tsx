@@ -5,7 +5,7 @@ import HomeCard2 from "../components/HomeCard2";
 import JoinUs from "../components/JoinUs";
 import StatSection from "../components/StatSection";
 import SwitchToFundnest from "../components/SwitchToFundnest";
-import TestimonialSection from "../components/Testimonials";
+import Testimonials from "../components/Testimonials";
 import WhyChooseUs from "../components/WhyChooseUs";
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
       <WhyChooseUs />
       <StatSection />
       <SwitchToFundnest />
-      <TestimonialSection />
+      <Testimonials />
       <HomeCard2 />
     </div>
   );
