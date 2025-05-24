@@ -12,6 +12,7 @@ import Signup from "./pages/Signup";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import ForgotPassword from "./pages/ForgotPassword";
+import StickyTelegramIcon from "./components/TelegramIcon";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
       </Routes>
+      <StickyTelegramIcon />
       <Footer />
     </>
   );
